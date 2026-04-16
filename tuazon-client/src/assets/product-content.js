@@ -9,8 +9,8 @@ const products = [
   {
     name: 'medtech-uniform',
     title: 'Medtech Uniform',
-    category: 'Uniform',
-    price: 'PHP 499',
+    category: 'Uniforms',
+    price: 'PHP 799',
     stock: 'In stock',
     image: getProductImage('medtech.jpg'),
     content: [
@@ -22,8 +22,8 @@ const products = [
   {
     name: 'tourism-uniform',
     title: 'Tourism Uniform',
-    category: 'Uniform',
-    price: 'PHP 249',
+    category: 'Uniforms',
+    price: 'PHP 649',
     stock: 'In stock',
     image: getProductImage('prod2.jpg'),
     content: [
@@ -35,8 +35,8 @@ const products = [
   {
     name: 'traditional-uniform',
     title: 'Traditional Uniform',
-    category: 'Uniform',
-    price: 'PHP 599',
+    category: 'Uniforms',
+    price: 'PHP 899',
     stock: 'Low stock',
     image: getProductImage('prod4.jpg'),
     content: [
@@ -48,8 +48,8 @@ const products = [
   {
     name: 'rle-manual-lvl1',
     title: 'Nursing RLE Manual Level 1',
-    category: 'Books',
-    price: 'PHP 899',
+    category: 'Medical Books',
+    price: 'PHP 450',
     stock: 'In stock',
     image: getProductImage('prod1.jpg'),
     content: [
@@ -61,8 +61,8 @@ const products = [
   {
     name: 'rle-manual-lvl2',
     title: 'Nursing RLE Manual Level 2',
-    category: 'Books',
-    price: 'PHP 1,199',
+    category: 'Medical Books',
+    price: 'PHP 550',
     stock: 'Preorder',
     image: getProductImage('prod7.jpg'),
     content: [
@@ -74,8 +74,8 @@ const products = [
   {
     name: 'rle-manual-lvl3',
     title: 'Nursing RLE Manual Level 3',
-    category: 'Books',
-    price: 'PHP 349',
+    category: 'Medical Books',
+    price: 'PHP 650',
     stock: 'In stock',
     image: getProductImage('prod15.jpg'),
     content: [
@@ -87,8 +87,8 @@ const products = [
   {
     name: 'rle-manual-lvl4',
     title: 'Nursing RLE Manual Level 4',
-    category: 'Books',
-    price: 'PHP 179',
+    category: 'Medical Books',
+    price: 'PHP 750',
     stock: 'In stock',
     image: getProductImage('prod14.jpg'),
     content: [
@@ -100,8 +100,8 @@ const products = [
   {
     name: 'pharmaceutical-organic-medicinal',
     title: 'Pharmaceutical Organic Medicinal Book',
-    category: 'Books',
-    price: 'PHP 399',
+    category: 'Medical Books',
+    price: 'PHP 699',
     stock: 'In stock',
     image: getProductImage('prod8.jpg'),
     content: [
@@ -113,8 +113,8 @@ const products = [
   {
     name: 'biochemistry-laboratory-manual',
     title: 'Biochemistry Laboratory Manual',
-    category: 'Books',
-    price: 'PHP 399',
+    category: 'Medical Books',
+    price: 'PHP 599',
     stock: 'In stock',
     image: getProductImage('prod10.jpg'),
     content: [
@@ -126,8 +126,8 @@ const products = [
   {
     name: 'nu-lanyard',
     title: 'National University Lanyard',
-    category: 'Merch',
-    price: 'PHP 399',
+    category: 'NU Merches',
+    price: 'PHP 120',
     stock: 'In stock',
     image: getProductImage('prod3.jpg'),
     content: [
@@ -139,8 +139,8 @@ const products = [
   {
     name: 'nu-bag-tag',
     title: 'National University Bag Tag',
-    category: 'Merch',
-    price: 'PHP 399',
+    category: 'NU Merches',
+    price: 'PHP 150',
     stock: 'In stock',
     image: getProductImage('prod5.jpg'),
     content: [
@@ -152,8 +152,8 @@ const products = [
   {
     name: 'nu-ball-cap',
     title: 'National University Ball Cap',
-    category: 'Merch',
-    price: 'PHP 399',
+    category: 'NU Merches',
+    price: 'PHP 299',
     stock: 'In stock',
     image: getProductImage('prod12.jpg'),
     content: [
@@ -165,8 +165,8 @@ const products = [
   {
     name: 'nu-hoodie',
     title: 'National University Hoodie',
-    category: 'Apparels',
-    price: 'PHP 399',
+    category: 'NU Merches',
+    price: 'PHP 999',
     stock: 'In stock',
     image: getProductImage('prod6.jpg'),
     content: [
@@ -178,8 +178,8 @@ const products = [
   {
     name: 'nu-logo-shirt',
     title: 'National University Logo Shirt',
-    category: 'Apparels',
-    price: 'PHP 399',
+    category: 'NU Merches',
+    price: 'PHP 349',
     stock: 'In stock',
     image: getProductImage('prod13.jpg'),
     content: [
@@ -191,7 +191,7 @@ const products = [
   {
     name: 'nu-est-shirt-navy',
     title: 'NU Est. 1900 Shirt (Navy Blue)',
-    category: 'Apparels',
+    category: 'NU Merches',
     price: 'PHP 399',
     stock: 'In stock',
     image: getProductImage('prod16.jpg'),
@@ -204,7 +204,7 @@ const products = [
   {
     name: 'nu-est-shirt-beige',
     title: 'NU Est. 1900 Shirt (Beige)',
-    category: 'Apparels',
+    category: 'NU Merches',
     price: 'PHP 399',
     stock: 'In stock',
     image: getProductImage('prod11.jpg'),

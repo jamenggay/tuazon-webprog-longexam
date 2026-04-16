@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import logo from '../assets/img/nubdexchange_logo.png';
-import heroImage from '../assets/img/FB_IMG_1776226223762.jpg';
+import heroImage from '../assets/img/prod11.jpg';
 
 const AuthLayout = () => {
   return (

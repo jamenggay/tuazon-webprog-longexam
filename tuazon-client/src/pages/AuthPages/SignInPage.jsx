@@ -61,7 +61,7 @@ const SignInPage = () => {
 
         <div className="grid gap-3 sm:grid-cols-2 mt-4">
           <a href="#" className="block">
-            <button className="w-full text-center bg-white hover:bg-[#fef9f3] transition-colors py-3 border flex items-center justify-center border-slate-200 rounded-[30px] text-white hover:border-slate-400 hover:text-white hover:shadow transition duration-150">
+            <button className="w-full text-sm text-center bg-white hover:bg-[#fef9f3] transition-colors py-3 border flex items-center justify-center border-slate-200 rounded-[30px] text-white hover:border-slate-400 hover:text-white hover:shadow transition duration-150">
               <img
                 src="/src/assets/icons/google-logo.png"
                 className="w-5 h-5 mr-2"
@@ -72,7 +72,7 @@ const SignInPage = () => {
           </a>
 
           <a href="#" className="block">
-            <button className="w-full text-center bg-white hover:bg-[#fef9f3] transition-colors py-3 border flex items-center justify-center border-slate-200 rounded-[30px] text-white hover:border-slate-400 hover:text-white hover:shadow transition duration-150">
+            <button className="w-full text-sm text-center bg-white hover:bg-[#fef9f3] transition-colors py-3 border flex items-center justify-center border-slate-200 rounded-[30px] text-white hover:border-slate-400 hover:text-white hover:shadow transition duration-150">
               <img
                 src="/src/assets/icons/github-logo.png"
                 className="w-6 h-5 mr-2"
