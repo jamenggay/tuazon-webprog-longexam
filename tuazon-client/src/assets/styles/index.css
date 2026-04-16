@@ -1,11 +1,132 @@
 @import "tailwindcss";
 
+@layer theme {
+  :root {
+    --bg: #f4efe6;
+    --surface: rgba(255, 250, 243, 0.82);
+    --surface-strong: #fffaf1;
+    --panel: #f8f1e4;
+    --line: rgba(40, 39, 35, 0.16);
+    --line-strong: #1f2937;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #b7791f;
+    --accent-deep: #8b5e13;
+    --accent-soft: rgba(217, 168, 91, 0.2);
+    --shadow-soft: 0 20px 45px rgba(54, 43, 22, 0.08);
+    --shadow-card: 0 18px 30px rgba(44, 36, 20, 0.08);
+    --font-sans: "Manrope", "Segoe UI Variable Text", "Segoe UI", sans-serif;
+    --font-display: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+  }
+}
+
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-zinc-100 text-zinc-900 antialiased;
+    background:
+      radial-gradient(circle at top left, rgba(217, 168, 91, 0.18), transparent 28%),
+      radial-gradient(circle at top right, rgba(37, 99, 235, 0.08), transparent 24%),
+      linear-gradient(180deg, #fbf7ef 0%, var(--bg) 44%, #efe7d8 100%);
+    color: var(--text);
+    font-family: var(--font-sans);
+    @apply antialiased;
   }
 
   #root {
     @apply min-h-screen;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: rgba(183, 121, 31, 0.22);
+    color: #1f2937;
+  }
+}
+
+@layer components {
+  .app-shell {
+    @apply relative overflow-x-hidden;
+  }
+
+  .page-stack {
+    @apply flex w-full flex-col gap-8 md:gap-10;
+  }
+
+  .section-block {
+    @apply mx-4 rounded-[2rem] border px-4 py-6 sm:mx-6 sm:px-6 sm:py-8 lg:mx-8 lg:px-8 lg:py-10;
+    background: linear-gradient(180deg, rgba(255, 250, 243, 0.92), rgba(247, 240, 229, 0.88));
+    border-color: var(--line);
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(10px);
+  }
+
+  .section-block-dark {
+    @apply mx-4 rounded-[2rem] border px-4 py-6 sm:mx-6 sm:px-6 sm:py-8 lg:mx-8 lg:px-8 lg:py-10;
+    background:
+      linear-gradient(135deg, rgba(17, 24, 39, 0.94), rgba(31, 41, 55, 0.9)),
+      linear-gradient(180deg, rgba(183, 121, 31, 0.14), transparent);
+    border-color: rgba(255, 244, 222, 0.18);
+    box-shadow: 0 24px 44px rgba(15, 23, 42, 0.24);
+    backdrop-filter: blur(10px);
+  }
+
+  .section-inner {
+    @apply mx-auto w-full max-w-6xl;
+  }
+
+  .eyebrow {
+    color: var(--accent-deep);
+    @apply text-[11px] font-semibold uppercase tracking-[0.3em];
+  }
+
+  .heading-xl {
+    @apply text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl;
+  }
+
+  .heading-lg {
+    @apply text-2xl font-semibold leading-tight sm:text-3xl;
+  }
+
+  .body-copy {
+    color: var(--muted);
+    @apply text-sm leading-7 sm:text-base;
+  }
+
+  .panel-card {
+    @apply rounded-[1.75rem] border p-5;
+    background: linear-gradient(180deg, rgba(255, 252, 246, 0.96), rgba(246, 237, 223, 0.94));
+    border-color: var(--line);
+    box-shadow: var(--shadow-card);
+  }
+
+  .metric-card {
+    @apply rounded-[1.75rem] border p-5;
+    background:
+      linear-gradient(180deg, rgba(255, 252, 246, 0.98), rgba(245, 236, 220, 0.95)),
+      linear-gradient(135deg, rgba(217, 168, 91, 0.08), transparent 60%);
+    border-color: var(--line);
+    box-shadow: var(--shadow-card);
+  }
+
+  .image-frame {
+    @apply overflow-hidden rounded-[1.5rem];
+    background: linear-gradient(180deg, rgba(231, 220, 201, 0.75), rgba(215, 203, 181, 0.92));
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em];
+    border-color: rgba(183, 121, 31, 0.24);
+    background: rgba(255, 249, 239, 0.72);
+    color: var(--accent-deep);
   }
 }
