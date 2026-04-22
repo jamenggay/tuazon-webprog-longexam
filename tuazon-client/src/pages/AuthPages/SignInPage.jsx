@@ -15,8 +15,8 @@ const SignInPage = () => {
         Access your store account to review orders, saved items, and pickup details.
       </p>
 
-      <form className="mt-8 space-y-5">
-        <div>
+      <form className="mt-3 space-y-5">
+        <div className="pb-0 mb-1">
           <label htmlFor="signin-email" className="text-sm font-medium text-slate-700">
             Email Address
           </label>

@@ -15,8 +15,8 @@ const SignUpPage = () => {
         Create a store account for faster checkout, order updates, and pickup details.
       </p>
 
-      <form className="mt-8 space-y-5">
-        <div className="grid gap-5 sm:grid-cols-2">
+      <form className="mt-3 space-y-5">
+        <div className="grid gap-5 sm:grid-cols-2 pb-0 mb-1">
           <div>
             <label htmlFor="first-name" className="text-sm font-medium text-slate-700">
               First Name
@@ -43,7 +43,7 @@ const SignUpPage = () => {
           </div>
         </div>
 
-        <div>
+        <div className="pb-0 mb-1">
           <label htmlFor="signup-email" className="text-sm font-medium text-slate-700">
             Email
           </label>
@@ -56,7 +56,7 @@ const SignUpPage = () => {
           />
         </div>
 
-        <div>
+        <div className="pb-1 mb-2">
           <label htmlFor="signup-password" className="text-sm font-medium text-slate-700">
             Password
           </label>
@@ -65,7 +65,7 @@ const SignUpPage = () => {
             type="password"
             placeholder="Password"
             autoComplete="new-password"
-            className={inputClasses}
+            className={`${inputClasses} pb-3`}
           />
           <p className="mt-2 text-xs leading-5 text-slate-500">
             Use a secure password with letters, numbers, and symbols.
